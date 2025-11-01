@@ -1,0 +1,46 @@
+{
+  "pid_tuning": {
+    "description": "PID configuration table based on quadcopter total weight (in kilograms).",
+    "units": {
+      "weight": "kg",
+      "pid": ["P", "I", "D"]
+    },
+    "data": [
+      {
+        "weight": 1.0,
+        "P": 3.8,
+        "I": 0.020,
+        "D": 17,
+        "notes": "Lighter frame – faster response, higher P, lower D to avoid overshoot."
+      },
+      {
+        "weight": 1.5,
+        "P": 3.3,
+        "I": 0.024,
+        "D": 19,
+        "notes": "Current setup – stable and smooth flight."
+      },
+      {
+        "weight": 2.0,
+        "P": 2.9,
+        "I": 0.027,
+        "D": 21,
+        "notes": "Heavier mass – slightly lower P, higher I, higher D for better control."
+      },
+      {
+        "weight": 2.5,
+        "P": 2.6,
+        "I": 0.030,
+        "D": 23,
+        "notes": "Heavier quad – slower response, needs more damping."
+      },
+      {
+        "weight": 3.0,
+        "P": 2.3,
+        "I": 0.033,
+        "D": 25,
+        "notes": "Heaviest setup – reduced P, higher D for stability, I increased for steady hover."
+      }
+    ]
+  }
+}

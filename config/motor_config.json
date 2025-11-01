@@ -1,0 +1,26 @@
+{
+  "motor_mapping": {
+    "description": "Motor to PCB output mapping for quadcopter",
+    "layout": {
+      "motors": {
+        "A": "Front-Left",
+        "B": "Front-Right",
+        "C": "Rear-Right",
+        "D": "Rear-Left"
+      },
+      "pcb_outputs": {
+        "A": "Front-Left (PCB A)",
+        "B": "Front-Right (PCB B)",
+        "C": "Rear-Right (PCB C)",
+        "D": "Rear-Left (PCB D)"
+      }
+    },
+    "connections": {
+      "Motor A": "PCB B",
+      "Motor B": "PCB C",
+      "Motor C": "PCB D",
+      "Motor D": "PCB A"
+    },
+    "notes": "Cross-wired layout used to ensure correct prop rotation and balance."
+  }
+}
